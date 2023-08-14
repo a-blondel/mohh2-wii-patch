@@ -1,0 +1,71 @@
+<wiidisc version="1">
+    <id game="RM2" developer="69">
+		<region type="X" />
+	</id>
+
+    <options>
+        <section name="Private Server">
+			<option name="WFC replacement" default="1">
+                <choice name="Wiimmfi">
+                    <patch id="wiimmfi" />
+                </choice>
+            </option>
+			<option name="Bypass certificate check" default="1">
+                <choice name="Enabled">
+                    <patch id="bypass-cert-check" />
+                </choice>
+            </option>
+			<option name="Bypass pw encoding" default="1">
+                <choice name="Enabled">
+                    <patch id="bypass-pw-encoding" />
+                </choice>
+            </option>
+        </section>
+		<section name="Misc">
+            <option name="Menu theme" default="0">
+                <choice name="Alternative theme">
+                    <patch id="alt-menu-theme" />
+                </choice>
+            </option>
+			<option name="Skip startup screens" default="0">
+                <choice name="Enabled">
+                    <patch id="skip-startup-screens" />
+                </choice>
+            </option>
+			<option name="Skip EA intro" default="0">
+                <choice name="Enabled">
+                    <patch id="skip-ea-intro" />
+                </choice>
+            </option>
+        </section>
+    </options>
+
+	<!-- Use Wiimmfi -->
+	<patch id="wiimmfi">
+		<file disc="/game.dol" external="mohh2/common/http-scheme1.bin" resize="false" offset="0x60eb44" />
+		<file disc="/game.dol" external="mohh2/common/http-scheme1.bin" resize="false" offset="0x65e2f0" />
+	    <file disc="/game.dol" external="mohh2/RM2X69/wiimmfi-nas.bin" resize="false" offset="0x65eee0" />
+		<file disc="/game.dol" external="mohh2/common/user-agent.bin" resize="false" offset="0x65f1ec" />
+		<file disc="/game.dol" external="mohh2/common/http-scheme2.bin" resize="false" offset="0x6e40a8" />
+	</patch>
+	<!-- Bypass EA certificate check -->
+	<patch id="bypass-cert-check">
+        <file disc="/game.dol" external="mohh2/common/bypass-cert-check.bin" resize="false" offset="0x20fec" />
+    </patch>
+	<!-- Bypass pw encoding (until we implement server side decoding and encoding) -->
+	<patch id="bypass-pw-encoding">
+        <file disc="/game.dol" external="mohh2/common/bypass-pw-encoding.bin" resize="false" offset="0x11118" />
+    </patch>
+	<!-- Alternative theme in the menu -->
+	<patch id="alt-menu-theme">
+        <file disc="/game.dol" external="mohh2/RM2X69/alt-menu-theme.bin" resize="false" offset="0x626857" />
+    </patch>
+	<!-- Skip startup screens -->
+	<patch id="skip-startup-screens">
+        <file disc="/game.dol" external="mohh2/RM2X69/skip-startup-screens.bin" resize="false" offset="0x24d5ac" />
+    </patch>
+	<!-- Skip EA Intro -->
+	<patch id="skip-ea-intro">
+        <file disc="/game.dol" external="mohh2/RM2X69/skip-ea-intro.bin" resize="false" offset="0x24d650" />
+    </patch>
+</wiidisc>

@@ -1,0 +1,42 @@
+<wiidisc version="1">
+    <id game="RM2" developer="69">
+		<region type="E" />
+	</id>
+
+    <options>
+        <section name="Private Server">
+			<option name="WFC replacement" default="1">
+                <choice name="Wiimmfi">
+                    <patch id="wiimmfi" />
+                </choice>
+            </option>
+			<option name="Bypass certificate check" default="1">
+                <choice name="Enabled">
+                    <patch id="bypass-cert-check" />
+                </choice>
+            </option>
+			<option name="Bypass pw encoding" default="1">
+                <choice name="Enabled">
+                    <patch id="bypass-pw-encoding" />
+                </choice>
+            </option>
+        </section>
+    </options>
+
+	<!-- Use Wiimmfi -->
+	<patch id="wiimmfi">
+		<file disc="/game.dol" external="mohh2/common/http-scheme1.bin" resize="false" offset="0x60ebe4" />
+		<file disc="/game.dol" external="mohh2/common/http-scheme1.bin" resize="false" offset="0x65e390" />
+	    <file disc="/game.dol" external="mohh2/RM2E69-BETA/wiimmfi-nas.bin" resize="false" offset="0x65ef80" />
+		<file disc="/game.dol" external="mohh2/common/user-agent.bin" resize="false" offset="0x65f28c" />
+		<file disc="/game.dol" external="mohh2/common/http-scheme2.bin" resize="false" offset="0x6e4148" />
+	</patch>
+	<!-- Bypass EA certificate check -->
+	<patch id="bypass-cert-check">
+        <file disc="/game.dol" external="mohh2/common/bypass-cert-check.bin" resize="false" offset="0x20fec" />
+    </patch>
+	<!-- Bypass pw encoding (until we implement server side decoding and encoding) -->
+	<patch id="bypass-pw-encoding">
+        <file disc="/game.dol" external="mohh2/common/bypass-pw-encoding.bin" resize="false" offset="0x11118" />
+    </patch>
+</wiidisc>
