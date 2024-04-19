@@ -17,11 +17,11 @@ We are targetting each version of MoHH2 :
 
 - **Private Server**
   - **WFC replacement** : Required to use the private server. Currently only Wiimmfi is supported.
-  - **Bypass certificate check** : Required for private server.
   - **Bypass pw encoding** : Required for private server.
   - **Serverless** : Allows to start a game alone without a working UDP server. **Beware : it crashes when taking damage !**
 - **Mods**
   - **Online Panzerschreck** : Restores the panzerschreck for the germans (which was replaced by the M1 Bazooka on the Wii version while being available on the PSP version)  
+
 <img src="doc/img/panzerschreck-label.png" alt="panzerschreck-label" width="400"/> <img src="doc/img/panzerschreck.png" alt="panzerschreck" width="400"/><br/>
 *Panzerschreck label / ingame*
 - **Misc**
