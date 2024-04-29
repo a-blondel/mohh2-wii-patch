@@ -10,12 +10,6 @@
                     <patch id="wiimmfi" />
                 </choice>
             </option>
-			
-            <option name="Bypass pw encoding" default="1">
-                <choice name="Enabled">
-                    <patch id="bypass-pw-encoding" />
-                </choice>
-            </option>
         </section>
     </options>
 
@@ -26,10 +20,5 @@
         <file disc="/game.dol" external="mohh2/RM2E69/wiimmfi-nas.bin" resize="false" offset="0x0065eea0" />
         <file disc="/game.dol" external="mohh2/common/user-agent.bin" resize="false" offset="0x65f1ac" />
         <file disc="/game.dol" external="mohh2/common/http-scheme2.bin" resize="false" offset="0x6e4068" />
-    </patch>
-	
-    <!-- Bypass pw encoding (until we implement server side decoding and encoding) -->
-    <patch id="bypass-pw-encoding">
-        <file disc="/game.dol" external="mohh2/generic/nop.bin" resize="false" offset="0x11118" />
     </patch>
 </wiidisc>

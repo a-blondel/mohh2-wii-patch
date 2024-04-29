@@ -11,12 +11,6 @@
                 </choice>
             </option>
             
-            <option name="Bypass pw encoding" default="1">
-                <choice name="Enabled">
-                    <patch id="bypass-pw-encoding" />
-                </choice>
-            </option>
-            
             <option name="Serverless" default="1">
                 <choice name="Enabled">
                     <patch id="serverless" />
@@ -108,11 +102,6 @@
         <file disc="/game.dol" external="mohh2/RM2X69/wiimmfi-nas.bin" resize="false" offset="0x65eee0" />
         <file disc="/game.dol" external="mohh2/common/user-agent.bin" resize="false" offset="0x65f1ec" />
         <file disc="/game.dol" external="mohh2/common/http-scheme2.bin" resize="false" offset="0x6e40a8" />
-    </patch>
-    
-    <!-- Bypass pw encoding (until we implement server side decoding and encoding) -->
-    <patch id="bypass-pw-encoding">
-        <file disc="/game.dol" external="mohh2/generic/nop.bin" resize="false" offset="0x11118" />
     </patch>
     
     <!-- Serverless -->
