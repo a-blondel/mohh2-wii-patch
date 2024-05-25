@@ -5,9 +5,11 @@ A project dedicated to connect the game to a private server, as well as some fea
 Our implementation of the private server can be found here : https://github.com/a-blondel/mohh2-wii-server
 
 
-## Riivolution patches
+## Riivolution patches and Gecko Codes
 
-We are targetting each version of MoHH2 :
+**Riivolution** patches are made for Dolphin only, as the Riivolution homebrew doesn't work with MoHH2 on Wii. **Gecko Codes** is a fallback solution for the Wii.
+
+The patches target the following versions of MoHH2 :
 - RM2P69 : PAL UK
 - RM2X69 : PAL EU (Fr,De,It,Es)
 - RM2E69 : NTSC US
@@ -16,8 +18,9 @@ We are targetting each version of MoHH2 :
 ### Available patches
 
 - **Private Server**
-  - **WFC replacement** : Required to use the private server. Currently only Wiimmfi is supported.
-  - **Bypass pw encoding** : Required for private server.
+  - **WFC replacement** : Required to access the private server. On Wii you can use the `Private Server` feature of USB Loader GX (recent versions only). Two options supported :
+    - NoSSL - Requires to host a [NWC server](https://github.com/a-blondel/nwc-server)
+	- Wiimmfi
   - **Serverless** : Allows to start a game alone without a working UDP server. **Beware : it crashes when taking damage !**
 - **Mods**
   - **Online Panzerschreck** : Restores the panzerschreck for the germans (which was replaced by the M1 Bazooka on the Wii version while being available on the PSP version)  
@@ -36,6 +39,10 @@ We are targetting each version of MoHH2 :
   - Copy and Paste content of the `Riivolution` folder inside of your `Dolphin/User/Load/Riivolution` folder.
   - Right click on the game, click on `Start with Riivolution Patches`, click on `Open Riivolution XML...` and select the XML related to your version of the game.
   - Choose the patches you need.
+- Wii
+  - Two options to apply the codes :
+    - Create a .txt file in which you add all the codes, and put the file in a folder named `txtcodes` at the root of your SD card. Then in your game loader go to `game settings`, `ocarina`, activate the codes you want, and click create.
+    - Generate a GCT file that you put in a `codes` folder at the root of your SD card. There are many sites and applications to create GCT files. If you feel nostlagic you might want to try my static version of [GeckoCodes.org](https://a-blondel.github.io/geckocodes.org/gct.html) ! Then enable ocarina in your game loader.
 
 
 ## Symbols map
