@@ -6,12 +6,24 @@
     <options>
         <section name="Private Server">
             <option name="WFC replacement" default="1">
+                <choice name="NoSSL">
+                    <patch id="nossl" />
+                </choice>
                 <choice name="Wiimmfi">
                     <patch id="wiimmfi" />
                 </choice>
             </option>
         </section>
     </options>
+	
+	<!-- Use NoSSL -->
+    <patch id="nossl">
+        <file disc="/game.dol" external="mohh2/common/http-scheme1.bin" resize="false" offset="0x60ebe4" />
+        <file disc="/game.dol" external="mohh2/common/http-scheme1.bin" resize="false" offset="0x65e390" />
+        <file disc="/game.dol" external="mohh2/RM2E69-BETA/nossl-nas.bin" resize="false" offset="0x65ef80" />
+        <file disc="/game.dol" external="mohh2/common/user-agent.bin" resize="false" offset="0x65f28c" />
+        <file disc="/game.dol" external="mohh2/common/http-scheme2.bin" resize="false" offset="0x6e4148" />
+    </patch>
 
     <!-- Use Wiimmfi -->
     <patch id="wiimmfi">
