@@ -38,11 +38,11 @@ The patches target the following versions of MoHH2 :
 - Dolphin
   - Copy and Paste content of the `Riivolution` folder inside of your `Dolphin/User/Load/Riivolution` folder.
   - Right click on the game, click on `Start with Riivolution Patches`, click on `Open Riivolution XML...` and select the XML related to your version of the game.
-  - Choose the patches you need.
+  - Activate the patches you need.
 - Wii
   - Two options to apply the codes :
-    - Create a .txt file in which you add all the codes, and put the file in a folder named `txtcodes` at the root of your SD card. Then in your game loader go to `game settings`, `ocarina`, activate the codes you want, and click create.
-    - Generate a GCT file that you put in a `codes` folder at the root of your SD card. There are many sites and applications to create GCT files. If you feel nostlagic you might want to try my static version of [GeckoCodes.org](https://a-blondel.github.io/geckocodes.org/gct.html) ! Then enable ocarina in your game loader.
+    - Copy the .txt file matching your Game ID from the `GeckoCodes` folder, and paste it in a folder named `txtcodes` at the root of your SD card. Then in your game loader go to `game settings`, `ocarina`, activate the codes you want, and click create. Don't forget to enable Ocarina in the Game Load setting. This option is more flexible as you can quickly change the codes on the Wii.
+    - Generate a GCT file based on the .txt file matching your Game ID from the `GeckoCodes` folder, then put the gct file in a `codes` folder at the root of your SD card. There are many sites and applications to create GCT files. If you feel nostlagic you might want to try my static version of [GeckoCodes.org](https://a-blondel.github.io/geckocodes.org/gct.html) ! Don't forget to enable Ocarina in the Game Load setting.
 
 
 ## Symbols map
