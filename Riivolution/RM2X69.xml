@@ -100,20 +100,12 @@
 	
 	<!-- Use NoSSL -->
     <patch id="nossl">
-        <file disc="/game.dol" external="mohh2/common/http-scheme1.bin" resize="false" offset="0x60eb44" />
-        <file disc="/game.dol" external="mohh2/common/http-scheme1.bin" resize="false" offset="0x65e2f0" />
         <file disc="/game.dol" external="mohh2/RM2X69/nossl-nas.bin" resize="false" offset="0x65eee0" />
-        <file disc="/game.dol" external="mohh2/common/user-agent.bin" resize="false" offset="0x65f1ec" />
-        <file disc="/game.dol" external="mohh2/common/http-scheme2.bin" resize="false" offset="0x6e40a8" />
     </patch>
 
     <!-- Use Wiimmfi -->
     <patch id="wiimmfi">
-        <file disc="/game.dol" external="mohh2/common/http-scheme1.bin" resize="false" offset="0x60eb44" />
-        <file disc="/game.dol" external="mohh2/common/http-scheme1.bin" resize="false" offset="0x65e2f0" />
         <file disc="/game.dol" external="mohh2/RM2X69/wiimmfi-nas.bin" resize="false" offset="0x65eee0" />
-        <file disc="/game.dol" external="mohh2/common/user-agent.bin" resize="false" offset="0x65f1ec" />
-        <file disc="/game.dol" external="mohh2/common/http-scheme2.bin" resize="false" offset="0x6e40a8" />
     </patch>
     
     <!-- Serverless -->
