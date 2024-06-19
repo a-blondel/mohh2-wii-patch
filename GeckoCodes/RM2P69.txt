@@ -1,13 +1,13 @@
-RM2X69
-Medal of Honor Heroes 2 PAL-EU
+RM2P69
+Medal of Honor Heroes 2 PAL-UK
 
 Serverless [SolidSnakeRu]
 0401F8C0 60000000
-045A102C 38000001
+045A0FEC 38000001
 Allows to join a lobby alone without needing server responses
 Beware, taking damage (explosives) will crash the game
 
 Online Panzerschreck [SolidSnakeRu & l ch ti]
-045EB570 00000011
-045EB558 496337DE
+045EB530 00000011
+045EB518 496337DE
 Replaces the M1 Bazooka by the Panzerschreck on German side

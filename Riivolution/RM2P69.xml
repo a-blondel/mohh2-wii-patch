@@ -13,24 +13,44 @@
                     <patch id="wiimmfi" />
                 </choice>
             </option>
+			
+			<option name="Serverless" default="1">
+                <choice name="Enabled">
+                    <patch id="serverless" />
+                </choice>
+            </option>
+        </section>
+		
+		<section name="Mods">
+            <option name="Online Panzerschreck" default="1">
+                <choice name="Enabled">
+                    <patch id="panzerschreck" />
+                </choice>
+            </option>
         </section>
     </options>
 	
 	<!-- Use NoSSL -->
     <patch id="nossl">
-        <file disc="/game.dol" external="mohh2/common/http-scheme1.bin" resize="false" offset="0x60eb04" />
-        <file disc="/game.dol" external="mohh2/common/http-scheme1.bin" resize="false" offset="0x65e2b0" />
         <file disc="/game.dol" external="mohh2/RM2P69/nossl-nas.bin" resize="false" offset="0x0065eea0" />
-        <file disc="/game.dol" external="mohh2/common/user-agent.bin" resize="false" offset="0x65f1ac" />
-        <file disc="/game.dol" external="mohh2/common/http-scheme2.bin" resize="false" offset="0x6e4068" />
     </patch>
 
     <!-- Use Wiimmfi -->
     <patch id="wiimmfi">
-        <file disc="/game.dol" external="mohh2/common/http-scheme1.bin" resize="false" offset="0x60eb04" />
-        <file disc="/game.dol" external="mohh2/common/http-scheme1.bin" resize="false" offset="0x65e2b0" />
         <file disc="/game.dol" external="mohh2/RM2P69/wiimmfi-nas.bin" resize="false" offset="0x0065eea0" />
-        <file disc="/game.dol" external="mohh2/common/user-agent.bin" resize="false" offset="0x65f1ac" />
-        <file disc="/game.dol" external="mohh2/common/http-scheme2.bin" resize="false" offset="0x6e4068" />
+    </patch>
+	
+	<!-- Serverless -->
+    <patch id="serverless">
+        <file disc="/game.dol" external="mohh2/common/nop.bin" resize="false" offset="0x11A20" />
+        <file disc="/game.dol" external="mohh2/common/serverless.bin" resize="false" offset="0x59314C" />
+    </patch>
+	
+	<!-- Panzerschreck -->
+    <patch id="panzerschreck">
+        <!-- hash -->
+        <file disc="/game.dol" external="mohh2/common/panzerschreck-hash.bin" resize="false" offset="0x5E7618" />
+        <!-- label -->
+        <file disc="/game.dol" external="mohh2/generic/word_0x11.bin" resize="false" offset="0x5E7630" />
     </patch>
 </wiidisc>
