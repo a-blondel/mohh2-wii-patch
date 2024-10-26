@@ -2,7 +2,7 @@
 
 A project dedicated to connect the game to a private server, as well as some features.
 
-Our implementation of the private server can be found here : https://github.com/a-blondel/mohh2-server
+Our implementation of the private server can be found here : https://github.com/a-blondel/mohh-master-server
 
 
 ## Riivolution patches and Gecko Codes
